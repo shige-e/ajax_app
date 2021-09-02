@@ -5,11 +5,11 @@ class PostsController < ApplicationController
   end
 
   # コメントアウト
-  #def new
-  #end
+  # def new
+  # end
 
   def create
     Post.create(content: params[:content])
-    redirect_to acton: :index #
+    redirect_to action: :index 
   end
 end
